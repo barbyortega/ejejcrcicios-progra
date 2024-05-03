@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready (function(){
+          $("btn1").click(function(){
+              $("box").animate();
+          });
+      });
+
+      $("btn2").click(function(){
+              $("box").animate();
+          });
+    </script>
+</head>
+<body>
+    <button ID="btn1">Alargar</button>
+    <button ID="btn2">enanchar</button>
+
+    <div id="box" style="background: #98bf21; height: 100px; width: 100px; margin: 6px;">
+    </div>
+</body>
+</html>
